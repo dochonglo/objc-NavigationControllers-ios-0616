@@ -40,8 +40,10 @@
 - (IBAction)aviButtonDidTouch {
     
 }
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
  
+    // Don't forget to cast the TeamDetailViewController.
     TeamDetailViewController *teamDetailViewController = (TeamDetailViewController *)segue.destinationViewController;
 
     if ([segue.identifier isEqualToString:@"alSegue"]) {
